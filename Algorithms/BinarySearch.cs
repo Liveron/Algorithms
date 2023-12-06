@@ -6,17 +6,17 @@ public class BinarySearch
         int low = 0;
         int high = arrToSearch.Length - 1;
         int mid;
-        int guessPosition;
+        int guess;
 
         while (low <= high)
         {
             mid = (low + high) / 2;
-            guessPosition = arrToSearch[mid];
+            guess = arrToSearch[mid];
 
-            if (guessPosition == itemToSearch)
+            if (guess == itemToSearch)
                 return mid;
 
-            else if (guessPosition > itemToSearch)
+            else if (guess > itemToSearch)
                 high = mid - 1;
 
             else low = mid + 1;
