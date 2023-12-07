@@ -1,12 +1,11 @@
 ﻿namespace Algorithms;
 public class BinarySearch
 {
-    static int Invoke(int[] arrToSearch, int itemToSearch)
+    public static int Invoke(int[] arrToSearch, int itemToSearch)
     {
         int low = 0;
         int high = arrToSearch.Length - 1;
-        int mid;
-        int guess;
+        int mid, guess;
 
         while (low <= high)
         {
