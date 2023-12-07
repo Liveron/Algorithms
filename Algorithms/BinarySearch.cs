@@ -1,5 +1,5 @@
 ﻿namespace Algorithms;
-public class BinarySearch
+public static class BinarySearch
 {
     public static int Invoke(int[] arrToSearch, int itemToSearch)
     {

@@ -1,16 +1,14 @@
-using Algorithms;
-
 namespace Tests;
 
 public class BinarySearchTests
 {
-    private int[] MakeStubIntArray() => new int[] { 1, 3, 5, 7, 9 };
+    private int[] CreateIntArray() => new int[] { 1, 3, 5, 7, 9 };
 
     [Fact]
-    public void Invoke_RandomValues_ReturnPosition()
+    public void Invoke_ReturnPosition()
     {
         const int STUB_ITEM_TO_SEARCH = 3;
-        int[] stubArray = MakeStubIntArray();
+        int[] stubArray = CreateIntArray();
 
         var result = BinarySearch.Invoke(stubArray, STUB_ITEM_TO_SEARCH);
 
@@ -21,7 +19,7 @@ public class BinarySearchTests
     public void Invoke_WrongValueToSearch_ReturnMinusOne()
     {
         const int STUB_WRONG_ITEM_TO_SEARCH = 0;
-        int[] stubArray = MakeStubIntArray();
+        int[] stubArray = CreateIntArray();
 
         var result = BinarySearch.Invoke(stubArray, STUB_WRONG_ITEM_TO_SEARCH);
 
