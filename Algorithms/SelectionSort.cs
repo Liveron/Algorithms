@@ -1,5 +1,4 @@
 namespace Algorithms;
-
 public static class SelectionSort
 {
     private static int FindSmallest(int[] array, int seekStartIndex)
