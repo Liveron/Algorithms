@@ -1,4 +1,4 @@
-namespace Tests;
+namespace Algorithms.Tests;
 
 public class BinarySearchTests
 {

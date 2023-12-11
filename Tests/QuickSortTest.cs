@@ -1,4 +1,4 @@
-namespace Algorithms;
+namespace Algorithms.Tests;
 
 public class QuickSortTests
 {
