@@ -1,2 +1,2 @@
 global using Xunit;
-global using Algorithms;
+global using Algorithms.Miscellaneous;
