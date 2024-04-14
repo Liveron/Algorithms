@@ -5,7 +5,7 @@ public class BraceBalanceTest
     [Theory]
     [InlineData("()[][{}]")]
     [InlineData("(Hello{World}!)")]
-    public void Invoke_DifferentValues_ReturnTrue(string value)
+    public void Invoke_SymmetricalValues_ReturnsTrue(string value)
     {
         bool result = BraceBalance.Invoke(value);
 
@@ -15,7 +15,7 @@ public class BraceBalanceTest
     [Theory]
     [InlineData("[}")]
     [InlineData("(]")]
-    public void Invoke_DifferentValues_ReturnFalse(string value)
+    public void Invoke_AsymmetricalValues_ReturnsFalse(string value)
     {
         bool result = BraceBalance.Invoke(value);
 
@@ -23,7 +23,7 @@ public class BraceBalanceTest
     }
 
     [Fact]
-    public void Invoke_NoBraces_ReturnTrue()
+    public void Invoke_EmptyString_ReturnsTrue()
     {
         string strubString = string.Empty;
 

@@ -2,26 +2,26 @@ namespace Algorithms.Tests;
 
 public class BinarySearchTests
 {
-    private int[] CreateIntArray() => new int[] { 1, 3, 5, 7, 9 };
+    private static int[] CreateStubValidArray() => [1, 3, 5, 7, 9];
 
     [Fact]
-    public void Invoke_ReturnPosition()
+    public void Invoke_ReturnsPosition()
     {
-        const int STUB_ITEM_TO_SEARCH = 3;
-        int[] stubArray = CreateIntArray();
+        int stubItemToSearch = 3;
+        int[] stubArray = CreateStubValidArray();
 
-        var result = BinarySearch.Invoke(stubArray, STUB_ITEM_TO_SEARCH);
+        var result = BinarySearch.Invoke(stubArray, stubItemToSearch);
 
         Assert.Equal(1, result);
     }
 
     [Fact]
-    public void Invoke_WrongValueToSearch_ReturnMinusOne()
+    public void Invoke_WrongValueToSearch_ReturnsMinusOne()
     {
-        const int STUB_WRONG_ITEM_TO_SEARCH = 0;
-        int[] stubArray = CreateIntArray();
+        int stubWrongItemToSearch = 0;
+        int[] stubArray = CreateStubValidArray();
 
-        var result = BinarySearch.Invoke(stubArray, STUB_WRONG_ITEM_TO_SEARCH);
+        var result = BinarySearch.Invoke(stubArray, stubWrongItemToSearch);
 
         Assert.Equal(-1, result);
     }

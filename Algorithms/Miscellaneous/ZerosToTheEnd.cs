@@ -13,11 +13,11 @@ namespace Algorithms.Miscellaneous
         /// moves all of the zeros to the end,
         /// preserving the order of the other elements
         /// </summary>
-        /// <param name="arr"></param>
-        /// <returns>int[]</returns>
+        /// <param name="arr">An input array</param>
+        /// <returns>Sorted array</returns>
         public static int[] Invoke(int[] arr)
         {
-            int[] newArr = new int[arr.Length];
+            var newArr = new int[arr.Length];
 
             int zerosCount = 0;
 

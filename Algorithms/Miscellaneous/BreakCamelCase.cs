@@ -1,4 +1,6 @@
-﻿namespace Algorithms.Miscellaneous
+﻿using System.Text;
+
+namespace Algorithms.Miscellaneous
 {
     public static class BreakCamelCase
     {
@@ -6,18 +8,19 @@
         /// Breaks up camel casing, using a space between words
         /// </summary>
         /// <returns>
-        /// String with spaces
+        /// String with spaces between words
         /// </returns>
-        /// <param name="camelCaseStr"></param>
+        /// <param name="camelCaseStr">String in camel case</param>
         public static string Invoke(string camelCaseStr)
         {
-            string result = string.Empty;
+            var result = new StringBuilder();
+
             foreach (var item in camelCaseStr)
             {
-                result += char.IsUpper(item) ? " " + item : item;
+                result.Append(char.IsUpper(item) ? " " + item : item);
             }
 
-            return result;
+            return result.ToString();
         }
     }
 }

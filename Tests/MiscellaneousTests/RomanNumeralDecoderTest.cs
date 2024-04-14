@@ -9,6 +9,7 @@
         public void Decode_ReturnsDecimal(string roman, int decim)
         {
             int result = RomanNumeralDecoder.Decode(roman);
+
             Assert.Equal(decim, result);
         }
     }
