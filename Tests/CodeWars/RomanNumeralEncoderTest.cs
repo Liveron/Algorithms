@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tests.MiscellaneousTests
+namespace Algorithms.Tests.CodeWars
 {
     //public class RomanNumeralEncoderTest
     //{

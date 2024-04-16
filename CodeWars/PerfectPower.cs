@@ -1,4 +1,4 @@
-﻿namespace Algorithms.Miscellaneous
+﻿namespace Algorithms.CodeWars
 {
     public static class PerfectPower
     {

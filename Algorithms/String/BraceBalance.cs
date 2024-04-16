@@ -1,4 +1,4 @@
-namespace Algorithms;
+namespace Algorithms.Common.String;
 
 public static class BraceBalance
 {

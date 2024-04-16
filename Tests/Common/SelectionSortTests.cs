@@ -1,4 +1,6 @@
-namespace Algorithms.Tests;
+using Algorithms.Common.Sort;
+
+namespace Algorithms.Tests.Common;
 
 public class SelectionSortTests
 {

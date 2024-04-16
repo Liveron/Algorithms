@@ -1,4 +1,4 @@
-namespace Algorithms;
+namespace Algorithms.Common.Sort;
 
 public static class QuickSort
 {
@@ -11,10 +11,7 @@ public static class QuickSort
             int[] less = array[1..].Where(x => x < pivot).ToArray();
             int[] greater = array[1..].Where(x => x > pivot).ToArray();
 
-            return Invoke(less)
-                .Concat(new int[] { pivot })
-                .Concat(Invoke(greater))
-                .ToArray();
+            return [.. Invoke(less), .. new int[] { pivot }, .. Invoke(greater)];
         }
     }
 }

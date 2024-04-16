@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Algorithms.Miscellaneous
+﻿namespace Algorithms.CodeWars
 {
     public static class RomanNumeralEncoder
     {
-        static readonly Dictionary<int, string> _decimalRoman = new()
+        private static readonly Dictionary<int, string> _decimalRoman = new()
         {
             { 1, "I" },
             { 5, "V" },

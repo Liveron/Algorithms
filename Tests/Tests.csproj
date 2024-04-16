@@ -6,6 +6,8 @@
     <Nullable>enable</Nullable>
 
     <IsPackable>false</IsPackable>
+
+    <RootNamespace>Algorithms.Tests</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -22,7 +24,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Algorithms\Algorithms.csproj" />
+    <ProjectReference Include="..\Algorithms\Common.csproj" />
+    <ProjectReference Include="..\CodeWars\CodeWars.csproj" />
   </ItemGroup>
 
 </Project>

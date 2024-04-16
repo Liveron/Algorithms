@@ -1,4 +1,4 @@
-﻿namespace Tests.MiscellaneousTests
+﻿namespace Algorithms.Tests.CodeWars
 {
     public class RomanNumeralDecoderTest
     {

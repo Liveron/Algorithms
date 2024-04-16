@@ -1,4 +1,4 @@
-﻿namespace Algorithms;
+﻿namespace Algorithms.Common.Search;
 public static class BinarySearch
 {
     public static int Invoke(int[] arrToSearch, int itemToSearch)

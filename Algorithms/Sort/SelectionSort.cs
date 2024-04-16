@@ -1,10 +1,10 @@
-namespace Algorithms;
+namespace Algorithms.Common.Sort;
 public static class SelectionSort
 {
     private static int FindSmallest(int[] array, int seekStartIndex)
     {
         int smallest = array[seekStartIndex];
-
+         
         for (int i = seekStartIndex; i < array.Length; i++)
             if (array[i] < smallest)
             {

@@ -1,4 +1,6 @@
-namespace Algorithms.Tests;
+using Algorithms.Common.String;
+
+namespace Algorithms.Tests.Common;
 
 public class BraceBalanceTest
 {
